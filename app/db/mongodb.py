@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 def get_mongo_client():
-    MONGODB_URI = os.getenv("MONGODB_URI", "mongodb://141.11.25.96:27017")
+    MONGODB_URI = os.getenv("MONGODB_URI")
     return MongoClient(MONGODB_URI)
 
 def get_floki_collection():
