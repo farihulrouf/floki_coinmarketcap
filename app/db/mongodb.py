@@ -12,3 +12,8 @@ def get_floki_collection():
     client = get_mongo_client()
     db = client.crypto_data
     return db.floki_prices
+
+def get_btc_collection():
+    client = get_mongo_client()
+    db = client.crypto_data
+    return db.btc
