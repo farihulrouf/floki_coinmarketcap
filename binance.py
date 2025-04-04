@@ -4,7 +4,7 @@ from pymongo import MongoClient
 from datetime import datetime
 
 # 1. Koneksi ke MongoDB
-mongo_client = MongoClient("mongodb://141.11.25.96:27017/")  # Ganti jika pakai cloud
+mongo_client = MongoClient("mongodb://localhost:27017/")  # Ganti jika pakai cloud
 db = mongo_client["crypto_data"]  # Nama database
 collection = db["pepe_1m"]  # Nama collection
 
